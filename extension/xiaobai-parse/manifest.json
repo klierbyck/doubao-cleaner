@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "小白素材解析工具",
+  "version": "0.1.0",
+  "description": "在豆包和千问页面中快速解析当前页面的图片与视频素材。",
+  "permissions": [
+    "clipboardRead"
+  ],
+  "host_permissions": [
+    "https://www.doubao.com/*",
+    "https://*.doubao.com/*",
+    "https://www.qianwen.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.doubao.com/thread/*",
+        "https://www.doubao.com/chat/*",
+        "https://www.qianwen.com/chat/*",
+        "https://www.qianwen.com/share/chat/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "小白素材解析工具",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "homepage_url": "https://github.com/klierbyck/doubao-cleaner"
+}

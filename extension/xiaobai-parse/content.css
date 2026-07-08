@@ -1,0 +1,150 @@
+#xiaobai-helper-root {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 2147483647;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #181818;
+}
+
+.xiaobai-helper-button {
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 999px;
+  background: #1e3328;
+  color: #fff;
+  box-shadow: 0 14px 38px rgba(15, 23, 18, 0.24);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.xiaobai-helper-button:hover {
+  background: #142a1e;
+  transform: translateY(-1px);
+}
+
+.xiaobai-helper-button svg {
+  width: 25px;
+  height: 25px;
+}
+
+.xiaobai-helper-panel {
+  position: absolute;
+  right: 0;
+  bottom: 64px;
+  width: min(360px, calc(100vw - 28px));
+  max-height: min(560px, calc(100vh - 112px));
+  overflow: hidden;
+  border: 1px solid rgba(30, 51, 40, 0.18);
+  border-radius: 10px;
+  background: #fffefa;
+  box-shadow: 0 24px 70px rgba(15, 23, 18, 0.22);
+  display: none;
+}
+
+.xiaobai-helper-panel.is-open {
+  display: block;
+}
+
+.xiaobai-helper-head {
+  padding: 14px 15px;
+  border-bottom: 1px solid #e2ddd2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.xiaobai-helper-title {
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.xiaobai-helper-close {
+  border: 0;
+  background: transparent;
+  color: #6b675f;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.xiaobai-helper-body {
+  padding: 12px;
+  overflow: auto;
+  max-height: calc(min(560px, calc(100vh - 112px)) - 50px);
+}
+
+.xiaobai-helper-status {
+  color: #6b675f;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.xiaobai-helper-status.is-error {
+  color: #a32323;
+}
+
+.xiaobai-helper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.xiaobai-helper-card {
+  border: 1px solid #e2ddd2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fbfaf6;
+}
+
+.xiaobai-helper-card img,
+.xiaobai-helper-card video {
+  display: block;
+  width: 100%;
+  max-height: 210px;
+  object-fit: contain;
+  background: #111;
+}
+
+.xiaobai-helper-card img {
+  background: #ede9df;
+}
+
+.xiaobai-helper-meta {
+  padding: 9px 10px;
+  color: #6b675f;
+  font-size: 12px;
+  border-top: 1px solid #e2ddd2;
+}
+
+.xiaobai-helper-actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 10px 10px;
+}
+
+.xiaobai-helper-actions button,
+.xiaobai-helper-actions a {
+  flex: 1 1 0;
+  min-height: 32px;
+  border: 1px solid #bdb7aa;
+  border-radius: 6px;
+  background: #fffefa;
+  color: #181818;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xiaobai-helper-actions button:hover,
+.xiaobai-helper-actions a:hover {
+  border-color: #1e3328;
+}

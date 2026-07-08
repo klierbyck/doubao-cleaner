@@ -1,0 +1,1 @@
+Compress-Archive -Path .\extension\xiaobai-parse\* -DestinationPath .\xiaobai-parse-v0.1.0.zip -Force
