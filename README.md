@@ -101,17 +101,15 @@ tampermonkey/xiaobai-doubao-helper.user.js
 
 用最新的 `tampermonkey/xiaobai-doubao-helper.user.js` 覆盖 Tampermonkey 中的旧脚本内容并保存，然后刷新目标网页。
 
+## 使用方式
+
+![使用方式](/scripts/demo.png)
+
+
 ## 注意事项
 
-- 如果目标素材尚未加载到页面中，请先滚动到目标消息附近，或点击一次分享/复制链接按钮后再解析。
+- 如果目标素材尚未加载到页面中，请先滚动到目标消息附近，或点击一次分享/复制链接按钮后再解析，如果还不行重新打开或者多刷新几次试试。
 
-## 隐私政策
-
-隐私政策见：
-
-```text
-PRIVACY.md
-```
 
 ## 许可证
 
@@ -119,4 +117,5 @@ MIT
 
 ## 社区
 
-本开源项目已链接并认可 [LINUX DO 社区](https://linux.do)。
+[LINUX DO ](https://linux.do)
+QQ群：1053570319
